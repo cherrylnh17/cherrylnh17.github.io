@@ -1,1 +1,1 @@
-# cherrylnh17.github.io
+# cherrylnh17.my.id
