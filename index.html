@@ -1,55 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE>
+<Head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="x-icon" href="new.png">
-  <title>Alight Motion Mod</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="logoumku.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Penugasan</title>
 </head>
 <body>
-  
-  <div class="download-container">
-    <a href="#" class="download-btn">Download File <i class="fas fa-download"></i></a>
-    <div class="countdown"></div>
-    <div class="pleaseWait-text">Please wait..</div>
-    <div class="manualDownload-text">
-      If the download didn't start automatically, <a href="" class="manualDownload-link">click here.</a>
-    </div>
-  </div>
-  
-  <script type="text/javascript">
-    const downloadBtn = document.querySelector(".download-btn");
-    const countdown = document.querySelector(".countdown");
-    const pleaseWaitText = document.querySelector(".pleaseWait-text");
-    const manualDownloadText = document.querySelector(".manualDownload-text");
-    const manualDownloadLink = document.querySelector(".manualDownload-link");
-    var timeLeft = 10;
-
-    downloadBtn.addEventListener("click", () => {
-      downloadBtn.style.display = "none";
-      countdown.innerHTML = "Download will begin automatically in <span>" + timeLeft + "</span> seconds";
-
-      var downloadTimer = setInterval(function timeCount(){
-        timeLeft -= 1;
-        countdown.innerHTML = "Download will begin automatically in <span>" + timeLeft + "</span> seconds";
-
-        if(timeLeft <= 0){
-          clearInterval(downloadTimer);
-          pleaseWaitText.style.display = "block";
-          let download_href = "https://komiku.id/";
-          window.location.href = download_href;
-          manualDownloadLink.href = download_href;
-
-          setTimeout(() => {
-            pleaseWaitText.style.display = "none";
-            manualDownloadText.style.display = "block";
-          }, 4000);
-        }
-      }, 1000);
-    });
-  </script>
-
+  <h1 class="tugas">Tugas Kuliah</h1>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr class="judulpenugasan">
+        <th>Tugas</th>
+        <th>Tanggal Penugasan</th>
+        <th>Mata Kuliah</th>
+        <th>Deadline</th>
+        <th>Dosen</th>
+      </tr>
+    </thead>
+    <tbody class="penugasan">
+      <tr>
+        <td>Membuat kreativitas dan inovasi bisnis</td>
+        <td>15 September</td>
+        <td><a href="https://chat.whatsapp.com/DQWFfQYd9NyGiK6vREqKQO" class="grup" target="_blank">Pengantar Bisnis</a></td>
+        <td>22 September</td>
+        <td><a href="https://api.whatsapp.com/send?phone=6281568395667" class="grup" target="_blank">Yunus/Nurani</a></td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>📌Note</h3>
+  <ul>
+    <li>Website diperbarui setiap jam 19.00-20.00 WIB</li>
+    <li>Untuk jadwal mata kuliah dapat diliat <a href="https://drive.google.com/file/d/1z07nkKMdDN87lj4_wZrHDudwRdSin_pl/view?usp=drive_link" target="blank">disini</a></li>
+    <li>Untuk chat dengan dosen tinggal klik nama dosen tersebut</li>
+  </ul>
 </body>
-</html>
