@@ -1,75 +1,27 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    background-color:rgba(227, 223, 225, 0.48);
 }
 
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.download-container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.download-btn{
-    position: relative;
-    background: #4285F4;
-    color: #fff;
-    width: 260px;
-    padding: 18px 0;
+.tugas{
+    color: black;
     text-align: center;
-    font-size: 1.3em;
-    font-weight: 400;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15% );
-    transition: background 0.3s ease;
+    margin: 10;
+    text-transform: uppercase;
 }
 
-.download-btn:hover{
-    background: #2874f3;
+.judulpenugasan{
+    color: red;
 }
 
-.download-btn i{
-    margin-left: 5px;
+.penugasan{
+    font-weight: bold;
+    color: rgba(33, 5, 5, 0.81);
 }
 
-.countdown{
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.countdown span{
-    color: #0693F6;
-    font-size: 1.5em;
-    font-weight: 800;
-}
-
-.pleaseWait-text{
-    font-size: 1.1em;
-    font-weight: 600;
-    display: none;
-}
-
-.manualDownload-text{
-    font-size: 1.1em;
-    font-weight: 600;
-    display: none;
-}
-
-.manualDownload-link{
-    color: #0693F6;
-    font-weight: 800;
+.grup{
+    color: rgba(33, 5, 5, 0.81);
     text-decoration: none;
 }
